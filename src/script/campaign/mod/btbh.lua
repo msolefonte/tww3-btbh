@@ -18,12 +18,6 @@ local function persist_table(table_name, t, callback)
     end);
 end
 
-local function btbh_log(str)
-  if get_config("logging_enabled") then
-    out("[wolfy][btbh] " .. str);
-  end
-end
-
 local function get_config(config_key)
   if get_mct then
     local mct = get_mct();
@@ -35,6 +29,12 @@ local function get_config(config_key)
   end
 
   return config[config_key];
+end
+
+local function btbh_log(str)
+  if get_config("logging_enabled") then
+    out("[wolfy][btbh] " .. str);
+  end
 end
 
 -- ACTIVE WARS --
@@ -64,7 +64,7 @@ local function aw_add_defeat(faction_key, enemy_faction_key)
   elseif active_wars[faction_key][enemy_faction_key] == nil then
     active_wars[faction_key][enemy_faction_key] = { duration = 0, wins = 0, losses = 1, last_offer = 0 };
   else
-    active_wars[faction_key][enemy_faction_key][losses] = active_wars[enemy_faction_key][faction_key][losses] + 1;
+    active_wars[faction_key][enemy_faction_key]["losses"] = active_wars[enemy_faction_key][faction_key]["losses"] + 1;
   end
 end
 
@@ -74,7 +74,7 @@ local function aw_add_victory(faction_key, enemy_faction_key)
   elseif active_wars[faction_key][enemy_faction_key] == nil then
     active_wars[faction_key][enemy_faction_key] = { duration = 0, wins = 1, losses = 0, last_offer = 0 };
   else
-    active_wars[faction_key][enemy_faction_key][wins] = active_wars[faction_key][enemy_faction_key][wins] + 1;
+    active_wars[faction_key][enemy_faction_key]["wins"] = active_wars[faction_key][enemy_faction_key]["wins"] + 1;
   end
 end
 
@@ -85,10 +85,10 @@ local function update_war_stats_after_battle(winner_faction)
   local defeated_faction_key, defeated_side_strength;
 
   if cm:pending_battle_cache_faction_is_attacker(winner_faction_key) then
-    defeated_faction_key = cm:pending_battle_cache_get_defender_faction_key(1);
+    defeated_faction_key = cm:pending_battle_cache_get_defender_faction_name(1);
     defeated_side_strength = cm:pending_battle_cache_defender_value();
   elseif cm:pending_battle_cache_faction_is_defender(winner_faction_key) then
-    defeated_faction_key = cm:pending_battle_cache_get_attacker_faction_key(1);
+    defeated_faction_key = cm:pending_battle_cache_get_attacker_faction_name(1);
     defeated_side_strength = cm:pending_battle_cache_attacker_value();
   else
     btbh_log("Faction " .. winner_faction_key .. " won a battle, but it is not attacker nor defender");
@@ -115,13 +115,13 @@ local function update_all_active_wars_duration()
 end
 
 local function clean_war_stats(faction_a, faction_b, reason)
-  btbh_log("Reseting empty stats for " .. faction_a .. " vs " .. faction_b .. ")");
+  btbh_log("Reseting empty stats for " .. faction_a .. " vs " .. faction_b);
   aw_delete_entry(faction_a, faction_b);
   aw_delete_entry(faction_b, faction_a);
 end
 
 local function reset_war_stats(faction_a, faction_b, reason)
-  btbh_log("Creating empty stats for " .. faction_a .. " vs " .. faction_b .. ")");
+  btbh_log("Creating empty stats for " .. faction_a .. " vs " .. faction_b);
   aw_create_entry(faction_a, faction_b);
   aw_create_entry(faction_b, faction_a);
 end

@@ -15,7 +15,7 @@ option_th_duration:set_text("Minimum War Duration");
 option_th_duration:set_tooltip_text("How many turns of war until start considering peace?");
 option_th_duration:slider_set_min_max(1, 50);
 option_th_duration:slider_set_step_size(1);
-optionoption_th_duration_th_dur:set_default_value(10);
+option_th_duration:set_default_value(10);
 
 local option_th_battles = mct_mod:add_new_option("threshold_battles", "slider");
 option_th_battles:set_text("Minimum War Battles");

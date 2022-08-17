@@ -1,20 +1,20 @@
-[![Steam Workshop Subscribers](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fshieldsio-steam-workshop.jross.me%2F2843367951%2Fsubscriptions-text)](https://steamcommunity.com/sharedfiles/filedetails/?id=2843367951)
-[![Steam Workshop Favorites](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fshieldsio-steam-workshop.jross.me%2F2843367951%2Ffavourites-text)](https://steamcommunity.com/sharedfiles/filedetails/?id=2843367951)
+[![Steam Workshop Subscribers](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fshieldsio-steam-workshop.jross.me%2F2850494354%2Fsubscriptions-text)](https://steamcommunity.com/sharedfiles/filedetails/?id=2850494354)
+[![Steam Workshop Favorites](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fshieldsio-steam-workshop.jross.me%2F2850494354%2Ffavourites-text)](https://steamcommunity.com/sharedfiles/filedetails/?id=2850494354)
 
-# Bring the Boys Home -- TODO FIX
+# Bring the Boys Home
 
-[![GitHub release](https://img.shields.io/github/release/msolefonte/tww3-cbac.svg?style=flat)](https://GitHub.com/msolefonte/tww3-cbac/releases/)
+[![GitHub release](https://img.shields.io/github/release/msolefonte/tww3-btbh.svg?style=flat)](https://GitHub.com/msolefonte/tww3-btbh/releases/)
 [![Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dwolfylpdc%26type%3Dpatrons&style=flat)](https://www.patreon.com/wolfylpdc)
-[![GitHub license](https://img.shields.io/github/license/msolefonte/tww3-cbac?style=flat)](https://github.com/msolefonte/tww3-cbac/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/msolefonte/tww3-btbh?style=flat)](https://github.com/msolefonte/tww3-btbh/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
-[Steam Workshop Mod Link](https://steamcommunity.com/sharedfiles/filedetails/?id=2843367951)
+[Steam Workshop Mod Link](https://steamcommunity.com/sharedfiles/filedetails/?id=2850494354)
 
 Bring the Boys Home mod for Total War: Warhammer III.
 
 ## Introduction
 
-Approved port of Jadawin's [Bring the Boys Home](https://steamcommunity.com/sharedfiles/filedetails/?id=1723390103) for -- TODO FIX
+Approved port of Jadawin's [Bring the Boys Home](https://steamcommunity.com/sharedfiles/filedetails/?id=2619922901) for
 Warhammer II.
 
 This mod introduces a new feature to the game: war exhaustion. This value, based on the duration of the war and on how
