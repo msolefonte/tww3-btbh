@@ -1,7 +1,7 @@
 [![Steam Workshop Subscribers](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fshieldsio-steam-workshop.jross.me%2F2843367951%2Fsubscriptions-text)](https://steamcommunity.com/sharedfiles/filedetails/?id=2843367951)
 [![Steam Workshop Favorites](https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fshieldsio-steam-workshop.jross.me%2F2843367951%2Ffavourites-text)](https://steamcommunity.com/sharedfiles/filedetails/?id=2843367951)
 
-# Cost-based Army Caps
+# Bring the Boys Home -- TODO FIX
 
 [![GitHub release](https://img.shields.io/github/release/msolefonte/tww3-cbac.svg?style=flat)](https://GitHub.com/msolefonte/tww3-cbac/releases/)
 [![Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dwolfylpdc%26type%3Dpatrons&style=flat)](https://www.patreon.com/wolfylpdc)
@@ -10,20 +10,20 @@
 
 [Steam Workshop Mod Link](https://steamcommunity.com/sharedfiles/filedetails/?id=2843367951)
 
-Cost-based Army Caps mod for Total War: Warhammer III.
+Bring the Boys Home mod for Total War: Warhammer III.
 
 ## Introduction
 
-Approved port of Jadawin's [Cost-based Army Caps](https://steamcommunity.com/sharedfiles/filedetails/?id=1723390103) for
+Approved port of Jadawin's [Bring the Boys Home](https://steamcommunity.com/sharedfiles/filedetails/?id=1723390103) for -- TODO FIX
 Warhammer II.
 
-This mod introduces an economic cap to the campaign armies in a very similar fashion than Multiplayer Battles do, hence
-removing the viability of elite doomstacks and increasing that of basic units without being limited by types or tiers.
-The change affects both the player and the AI, although by default the human limited will be smaller.
+This mod introduces a new feature to the game: war exhaustion. This value, based on the duration of the war and on how
+good is it going for the faction, is used to force AI to ask for peace once it has passed a threshold. This fixes a
+classic problem with the game where the AI will never ask for help even if it is on a serious disadvantage.
 
-If the total point cost of the army exceeds the limit, it will cost 3x the normal upkeep and will be unable to replenish
-until it is again under the cost limit. Worry not, limits are programmed to be dynamic by default, which means a higher
-level lord will be able to handle a more expensive army. All the values can be modified using MCT.
+Notable changes introduced from the original Jadawin version include AI to AI peace treaties, extended configuration via
+Mod Configuration Tool and automatic support for support for DLC and mod races and factions. Performance and
+optimization has also been improved.
 
 ## Contributing
 
